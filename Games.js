@@ -3,11 +3,11 @@ let leaderboard = JSON.parse(localStorage.getItem('mixOrMatchLeaderboard')) || [
 
 class AudioController {
     constructor() {
-        this.bgMusic = new Audio('Hedwigs Theme Theme from Harry Potter.mp3');
-        this.flipSound = new Audio('Assets_Audio_flip.wav');
-        this.matchSound = new Audio('Assets_Audio_match.wav');
-        this.victorySound = new Audio('Assets_Audio_victory.wav');
-        this.gameOverSound = new Audio('defeat-sound.mp3');
+        this.bgMusic = new Audio('music/Hedwigs Theme Theme from Harry Potter.mp3');
+        this.flipSound = new Audio('music/Assets_Audio_flip.wav');
+        this.matchSound = new Audio('music/Assets_Audio_match.wav');
+        this.victorySound = new Audio('music/Assets_Audio_victory.wav');
+        this.gameOverSound = new Audio('music/defeat-sound.mp3');
         this.bgMusic.volume = 0.5;
         this.bgMusic.loop = true;
     }
